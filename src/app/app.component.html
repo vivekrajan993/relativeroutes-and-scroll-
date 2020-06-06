@@ -1,0 +1,11 @@
+<header class="header">
+  <a mat-button routerLink="/foo" routerLinkActive="active">Foo Page</a>
+  <a mat-button routerLink="/bar" routerLinkActive="active">Bar Page</a>
+  <a mat-button routerLink="/bar" [fragment]="'bar-4'" routerLinkActive="active">Bar Page (#bar-2)</a>
+  <button mat-button (click)="locationBack()">Location Back</button>
+  <button mat-button (click)="locationBackAngular()">Location Back (Angular)</button>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
